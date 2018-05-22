@@ -1,10 +1,14 @@
 // 1. Config files and helpers
+@import 'abstracts/index';
 
 // 2. Vendor
+@import 'vendor/index';
 
 // 3. Base styles
+@import 'base/index';
 
 // 4. Layout
+@import 'layout/index';
 
 // 5. Components
-
+@import 'components/index';

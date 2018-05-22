@@ -1,0 +1,13 @@
+/* HERO */
+
+.hero {
+    padding-top: 8em;
+    padding-bottom: 8em;
+    text-align: center;
+    background: linear-gradient(to right, $main, $secondary);
+    color: $text-inverse;
+}
+
+.hero-img {
+    display: none;
+}
