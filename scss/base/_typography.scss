@@ -1,0 +1,99 @@
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4, h5, h6, p,
+.h1, .h2, .h3, .h4, .h5, .h6, .p {
+    margin: 0 0 .75em;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+.h1:last-child,
+.h2:last-child,
+.h3:last-child,
+.h4:last-child,
+.h5:last-child,
+.h6:last-child,
+.p:last-child {
+    margin: 0;
+}
+
+h1, .h1 {
+    font-size: 2rem;
+    font-weight: $font-light;
+    letter-spacing: 3px;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+h2, .h2 {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+a {
+    text-transform: uppercase;
+    transition: .25s ease-in-out color;
+}
+
+.title-lg {
+    font-size: 3rem;
+    font-weight: $font-bold;
+    line-height: .9;
+    
+    span {
+        font-weight: $font-light;
+    }
+}
+
+.title-box {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2em;
+    background: $accent;
+    color: $text-inverse;
+    transform: translateY(30%);
+
+    @media (min-width: 495px) {
+        transform: translateY(50%)
+    }
+
+    & + .bg-primary {
+        padding-top: 6em;
+
+        @media (min-width: 495px) {
+            padding-top: 8em;
+        }
+    }
+
+    @media (min-width: 425px) {
+        max-width: 700px;
+    }
+}
+
+.title-footer {
+    letter-spacing: 3px;
+    line-height: 1;
+    text-transform: uppercase;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        margin: .75em 0;
+        background: $text-inverse;
+        opacity: 0.25;
+
+    }
+}
+
+.text-intro {
+    font-size: 1.2rem;
+}

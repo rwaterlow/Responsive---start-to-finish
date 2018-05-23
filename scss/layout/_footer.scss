@@ -1,0 +1,56 @@
+footer {
+    position: relative;
+    padding: 5em 0;
+    color: $text-inverse;
+    background: $dark;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        background-image: url(../../img/logo.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.05;
+    }
+
+    a {
+        color: $text-inverse;
+        cursor: pointer;
+
+        &:focus,
+        &:hover {
+            color: lighten($text-main, 15%);
+        }
+    }
+}
+
+.social-links {
+    display: flex;
+    margin: .7em 0;
+    font-size: 3rem;
+    justify-content: space-around;
+    opacity: .8em;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+
+    a {
+        text-decoration: none;
+        font-weight: $font-medium;
+    }
+}
+
+.container--footer {
+    position: relative;
+    max-width: 25em;
+    z-index: 99;
+}

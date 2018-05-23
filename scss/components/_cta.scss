@@ -1,0 +1,43 @@
+.cta {
+    position: relative;
+    padding: 5em 0;
+    color: $text-inverse;
+    background: $secondary;
+    background-image: url(../../img/call-to-action-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    overflow: hidden;
+
+    @media (min-width: 725px) {
+        padding: 10em 0;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            background: $accent;
+            border: 1em solid $white;
+        }
+
+        &::before {
+            top: 0;
+            bottom: -1em;
+            left: -105%;
+            transform: skewX(60deg);
+        }
+
+        &::after {
+            top: -1em;
+            bottom: 0;
+            right: -105%;
+            transform: skewX(60deg);
+        }
+
+        .container--cta {
+            width: 50%;
+        }
+    }
+}
