@@ -25,7 +25,7 @@ footer {
 
         &:focus,
         &:hover {
-            color: lighten($text-main, 15%);
+            color: lighten($text-secondary, 15%);
         }
     }
 }

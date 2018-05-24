@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900&subset=latin-ext");
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -19,7 +19,7 @@ html {
    */
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6; }
 
@@ -651,7 +651,7 @@ footer {
     color: white;
     cursor: pointer; }
     footer a:focus, footer a:hover {
-      color: #06caf3; }
+      color: #50edb4; }
 
 .social-links {
   display: -webkit-box;
@@ -672,7 +672,7 @@ footer {
   margin: 0 auto; }
   .nav-footer a {
     text-decoration: none;
-    font-weight: 500; }
+    font-weight: 600; }
 
 .container--footer {
   position: relative;
@@ -706,6 +706,7 @@ footer {
     background: white;
     color: #048ca8; }
 
+/* CTA */
 .cta {
   position: relative;
   padding: 5em 0;
